@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-rest-api-mysql",
+  "version": "1.0.0",
+  "description": "Belajar membuat RestAPI CRUD MySQL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zeldianto EP",
+  "license": "ISC"
+}
