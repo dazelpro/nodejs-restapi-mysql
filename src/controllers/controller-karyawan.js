@@ -7,6 +7,7 @@ pool.on('error',(err)=> {
 });
 
 module.exports ={
+    // Ambil data semua karyawan
     getDataKaryawan(req,res){
         pool.getConnection(function(err, connection) {
             if (err) throw err;
@@ -25,6 +26,7 @@ module.exports ={
             connection.release();
         })
     },
+    // Ambil data karyawan berdasarkan ID
     getDataKaryawanByID(req,res){
         let id = req.params.id;
         pool.getConnection(function(err, connection) {
@@ -45,6 +47,7 @@ module.exports ={
             connection.release();
         })
     },
+    // Simpan data karyawan
     addDataKaryawan(req,res){
         let data = {
             karyawan_nama : req.body.nama,
@@ -69,6 +72,7 @@ module.exports ={
             connection.release();
         })
     },
+    // Update data karyawan
     editDataKaryawan(req,res){
         let dataEdit = {
             karyawan_nama : req.body.nama,
@@ -94,6 +98,7 @@ module.exports ={
             connection.release();
         })
     },
+    // Delete data karyawan
     deleteDataKaryawan(req,res){
         let id = req.body.id
         pool.getConnection(function(err, connection) {
