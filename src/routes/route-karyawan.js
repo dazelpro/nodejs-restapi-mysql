@@ -10,7 +10,7 @@ router.get('/karyawan/:id', karyawan.getDataKaryawanByID);
 // POST localhost:8080/karyawan/add => Tambah data karyawan ke database
 router.post('/karyawan/add', karyawan.addDataKaryawan);
 
-// POST localhost:8080/karyawan/2 => Edit data karyawan
+// POST localhost:8080/karyawan/edit => Edit data karyawan
 router.post('/karyawan/edit', karyawan.editDataKaryawan);
 
 // POST localhost:8080/karyawan/delete => Delete data karyawan
