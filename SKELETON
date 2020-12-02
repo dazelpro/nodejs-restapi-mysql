@@ -1,21 +1,21 @@
 
 
-    NODEJS-REST-API-MYSQL/
-    ├── node_modules/
-    ├── src/
-    │   ├── configs/
-    │   │   └── database.js
-    │   │
-    │   ├── controllers/
-    │   │   ├── controller-karyawan.js
-    │   │   └── index.js
-    │   │
-    │   └── routes/
-    │       └── router-karyawan.js
-    │
-    ├── app.js
-    ├── package-lock.json
-    └── package.json
+NODEJS-REST-API-MYSQL/
+├── node_modules/
+├── src/
+│   ├── configs/
+│   │   └── database.js
+│   │
+│   ├── controllers/
+│   │   ├── controller-karyawan.js
+│   │   └── index.js
+│   │
+│   └── routes/
+│       └── router-karyawan.js
+│
+├── app.js
+├── package-lock.json
+└── package.json
 
 
 

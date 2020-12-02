@@ -19,25 +19,26 @@ module.exports ={
                 res.send({ 
                     success: true, 
                     message: 'Berhasil ambil data!',
-                    data: results, 
+                    data: results 
                 });
             });
             connection.release();
         })
     },
     getDataKaryawanByID(req,res){
+        let id = req.params.id;
         pool.getConnection(function(err, connection) {
             if (err) throw err;
             connection.query(
                 `
-                SELECT * FROM tabel_karyawan;
+                SELECT * FROM tabel_karyawan WHERE karyawan_id = ?;
                 `
             , function (error, results) {
                 if(error) throw error;  
                 res.send({ 
                     success: true, 
                     message: 'Berhasil ambil data!',
-                    data: results, 
+                    data: results
                 });
             });
             connection.release();
