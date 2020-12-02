@@ -33,7 +33,8 @@ module.exports ={
                 `
                 SELECT * FROM tabel_karyawan WHERE karyawan_id = ?;
                 `
-            , function (error, results) {
+            , [id],
+            function (error, results) {
                 if(error) throw error;  
                 res.send({ 
                     success: true, 
